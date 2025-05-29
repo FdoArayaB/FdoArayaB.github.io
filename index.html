@@ -1,18 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio de Fernando Araya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Fernando Araya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0f1a;
+      color: #e0f7fa;
+    }
+    header {
+      background-color: #001f3f;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #00e5ff;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #00e5ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #00e5ff;
+      border-bottom: 1px solid #00e5ff;
+      padding-bottom: 0.5rem;
+    }
+    .project {
+      background-color: #001f3f;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+    }
+    .project a {
+      color: #00e5ff;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #001f3f;
+      color: #00e5ff;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola, soy Fernando Araya 👋</h1>
-  <p>Soy Data Scientist y este es mi portafolio web.</p>
-  <h2>Proyectos destacados</h2>
-  <ul>
-    <li><a href="https://github.com/farayab/proyecto1">Análisis de ventas</a></li>
-    <li><a href="https://github.com/farayab/proyecto2">Clasificación de textos</a></li>
-  </ul>
-  <p>📫 Contacto: farayab@inacap.cl</p>
+  <header>
+    <h1>Fernando Araya</h1>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy Data Scientist con experiencia en análisis de datos, machine learning y visualización. Apasionado por transformar datos en soluciones reales.</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="project">
+      <h3>Clasificación de Sentimientos</h3>
+      <p>Modelo de NLP para analizar opiniones de clientes usando Python y scikit-learn.</p>
+      <a href="https://github.com/farayab/sentiment-analysis">Ver en GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Dashboard de Ventas</h3>
+      <p>Dashboard interactivo en Streamlit para visualizar KPIs comerciales.</p>
+      <a href="https://github.com/farayab/sales-dashboard">Ver en GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Predicción de Precios de Casas</h3>
+      <p>Modelo de regresión multivariable con visualización en Plotly.</p>
+      <a href="https://github.com/farayab/house-price-prediction">Ver en GitHub</a>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Python, R, SQL</li>
+      <li>scikit-learn, pandas, matplotlib, seaborn</li>
+      <li>Streamlit, Power BI, Tableau</li>
+      <li>Machine Learning, Deep Learning, NLP</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>📧 Email: farayab@inacap.cl</p>
+    <p>🔗 <a href="https://github.com/farayab" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/fernando-araya" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fernando Araya - Data Science Portfolio</p>
+  </footer>
 </body>
 </html>
